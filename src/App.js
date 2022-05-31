@@ -1,10 +1,19 @@
-import logo from './logo.svg';
+
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Navbar from './Components/Shared/Navbar';
+import { PublicRoutes } from './Routes/PublicRoutes';
 
 function App() {
   return (
-    <div className="App">
-     <h1>This is getting heavey</h1>
+    <div>
+     <Navbar>
+      <Routes>
+      {PublicRoutes.map(({ path, Component }, index) => (
+            <Route key={index} path={path} element={<Component />} />
+          ))}
+      </Routes>
+     </Navbar>
     </div>
   );
 }
