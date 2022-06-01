@@ -1,6 +1,7 @@
 
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Footer from './Components/Shared/Footer';
 import Navbar from './Components/Shared/Navbar';
 import { PublicRoutes } from './Routes/PublicRoutes';
 
@@ -13,6 +14,7 @@ function App() {
             <Route key={index} path={path} element={<Component />} />
           ))}
       </Routes>
+      <Footer/>
      </Navbar>
     </div>
   );
