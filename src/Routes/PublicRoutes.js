@@ -14,6 +14,6 @@ export const PublicRoutes = [
         path:'/contact', name:'Contact', Component:Contact
     },
     {
-        path:'/', name:'Home', Component:Login
+        path:'/login', name:'Login', Component:Login
     },
 ]

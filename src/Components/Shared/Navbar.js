@@ -16,14 +16,17 @@ const Navbar = ({ children }) => {
       <li>
         <Link to="/contact">Contact</Link>
       </li>
+      <li>
+        <Link to="/Login">Login</Link>
+      </li>
     </>
   );
   return (
     <div class="drawer drawer-end">
       <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content flex flex-col">
-        <div class="w-full navbar bg-base-200">
-          <div class="flex-1 px-2 mx-2 font-serif">Doctors Portals</div>
+        <div class="w-full navbar bg-white px-4">
+          <div class="flex-1 px-2 mx-2 font-serif text-2xl">Doctors Portals</div>
           <div class="flex-none lg:hidden">
             <label for="my-drawer-3" class="btn btn-square btn-ghost">
               <svg
