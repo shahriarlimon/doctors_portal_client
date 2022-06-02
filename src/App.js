@@ -7,7 +7,7 @@ import { PublicRoutes } from './Routes/PublicRoutes';
 
 function App() {
   return (
-    <div className=''>
+    <div className='lg:px-12'>
      <Navbar>
       <Routes>
       {PublicRoutes.map(({ path, Component }, index) => (
